@@ -20,6 +20,6 @@
       }
     }
   },
-  "postCreateCommand": "sudo npm install -g @anthropic-ai/claude-code",
+  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash",
   "remoteUser": "vscode"
 }
