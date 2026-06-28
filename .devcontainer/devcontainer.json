@@ -20,6 +20,6 @@
       }
     }
   },
-  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash",
+  "postCreateCommand": "bash .devcontainer/postcreate.sh",
   "remoteUser": "vscode"
 }
