@@ -1,0 +1,28 @@
+version: 2
+updates:
+  # GitHub Actions の依存を週次で自動更新
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "chore(deps)"
+    labels:
+      - "chore"
+
+  # TODO: プロジェクトの言語に合わせて追加してください。例:
+  #
+  # - package-ecosystem: "npm"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #   commit-message:
+  #     prefix: "chore(deps)"
+  #   labels:
+  #     - "chore"
+  #
+  # - package-ecosystem: "pip"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "weekly"
+  #   ...

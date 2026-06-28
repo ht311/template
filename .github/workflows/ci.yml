@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# ジョブ ID "ci" はルールセットの必須チェック名と一致させること。
+# setup-repo.sh が required_status_checks に "ci" を登録している。
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # -----------------------------------------------------------------------
+      # TODO: ここにプロジェクト固有の lint / test / build を追加してください。
+      # 例:
+      #   - name: Install dependencies
+      #     run: npm ci
+      #   - name: Lint
+      #     run: npm run lint
+      #   - name: Test
+      #     run: npm test
+      # -----------------------------------------------------------------------
+
+      - name: Placeholder (replace with real steps)
+        run: echo "CI passed. Add project-specific steps above."
