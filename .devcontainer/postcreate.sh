@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-pip install -e '.[dev]'
 npm install -g @anthropic-ai/claude-code
 npm install -g pnpm@11.6.0
 
