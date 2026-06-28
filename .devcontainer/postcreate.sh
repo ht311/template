@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH"
+
 npm install -g @anthropic-ai/claude-code
 npm install -g pnpm@11.6.0
 
